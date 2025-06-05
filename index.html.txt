@@ -15,7 +15,7 @@
     body {
       line-height: 1.6;
       color: #333;
-      background-image: url('web/pozadi.png');
+      background-image: url('pozadi.png');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -23,7 +23,7 @@
 
     header {
       background: linear-gradient(135deg, #4c1d95, #7c3aed);
-      background-image: url('web/pozadi.png');
+      background-image: url('pozadi.png');
       background-size: cover;
       background-position: center;
       background-blend-mode: overlay;
@@ -49,7 +49,7 @@
       max-width: 1200px;
       margin: 0 auto;
       padding: 2rem;
-      background: rgba(255, 255, 255, 0.9); /* Poloprůhledné bílé pozadí pro čitelnost */
+      background: rgba(255, 255, 255, 0.9);
       border-radius: 10px;
     }
 
@@ -86,11 +86,12 @@
       padding: 2rem;
       width: 100%;
       max-width: 300px;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .service-card:hover {
       transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
     }
 
     .service-card h3 {
@@ -104,6 +105,25 @@
       height: auto;
       border-radius: 8px;
       margin-bottom: 1rem;
+      display: block;
+    }
+
+    .service-card img:not([src]), .service-card img[src=""] {
+      border: 2px dashed #f00;
+      min-height: 150px;
+      background: #f8f8f8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #f00;
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .service-card:hover img {
+      transform: scale(1.05);
+      opacity: 0.9;
     }
 
     footer {
@@ -163,7 +183,7 @@
 </head>
 <body>
   <header>
-    <img src="web/logo1.png" alt="Velvet Schoon Logo" class="logo">
+    <img src="logo1.png" alt="Velvet Schoon Logo" class="logo">
     <h1>Velvet Schoon</h1>
     <p>Uw vertrouwde partner voor een schone leefomgeving</p>
   </header>
@@ -181,36 +201,19 @@
       <div class="services">
         <div class="service-card">
           <h3>Woning Schoonmaak</h3>
-          <img src="web/obrazek1.png" alt="Woning Schoonmaak">
+          <img src="obrazek1.png" alt="Woning Schoonmaak">
         </div>
         <div class="service-card">
           <h3>Kantoorschoonmaak</h3>
-          <img src="web/obrazek2.png" alt="Kantoorschoonmaak">
+          <img src="obrazek2.png" alt="Kantoorschoonmaak">
         </div>
         <div class="service-card">
           <h3>Seniorenfaciliteiten</h3>
-          <img src="web/obrazek3.png" alt="Seniorenfaciliteiten">
+          <img src="obrazek3.png" alt="Seniorenfaciliteiten">
         </div>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>Velvet Schoon Schoonmaakbedrijf</p>
-    <p>E-mail: <a href="mailto:velvetschoon@gmail.com">velvetschoon@gmail.com</a></p>
-    <p>KVK: 97385522 | BTW: 555082507</p>
-  </footer>
-
-  <script>
-    // Jednoduchý JavaScript pro plynulé scrollování při navigaci (pokud by byly odkazy)
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
-</body>
-</html>
+    <p>Velvet Schoon Sch
