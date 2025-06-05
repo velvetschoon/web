@@ -73,6 +73,7 @@
       gap: 2rem;
       justify-content: center;
       margin-top: 2rem;
+      align-items: stretch;
     }
 
     .service-card {
@@ -83,6 +84,10 @@
       width: 100%;
       max-width: 300px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 350px; /* Zajistí minimální výšku karet */
     }
 
     .service-card:hover {
@@ -94,11 +99,17 @@
       font-size: 1.5rem;
       margin-bottom: 1rem;
       color: #4c1d95;
+      min-height: 60px; /* Zajistí konzistentní výšku nadpisů */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
 
     .service-card img {
       max-width: 100%;
-      height: auto;
+      height: 150px; /* Pevná výška pro obrázky */
+      object-fit: cover; /* Zajistí, že obrázky vyplní prostor bez deformace */
       border-radius: 8px;
       margin-bottom: 1rem;
       display: block;
@@ -187,7 +198,7 @@
   <section id="about">
     <div class="container">
       <h2>Over Ons</h2>
-      <p>Velvet Schoon is een professioneel schoonmaakbedrijf dat gespecialiseerd is in het schoonmaken van woningen, kantoren en seniorenfaciliteiten. Met oog voor detail en een passie voor netheid zorgen wij voor een frisse en gezonde omgeving voor al onze klanten.</p>
+      <p>Velvet Schoon is een professioneel schoonmaakbedrijf dat gespecialiseerd is in het schoonmaken van woningen, kantoren en seniorenfaciliteiten. Met oog voor detail en een passie voor netheid zorgen wij voor een frisse en gezonde omgeving voor al onze klanten. Wij bieden ook schoonmaak met milieuvriendelijke BIO-producten aan.</p>
     </div>
   </section>
 
@@ -211,11 +222,18 @@
     </div>
   </section>
 
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Voor informatie of vragen over onze diensten, neem contact met ons op via:</p>
+      <p><a href="mailto:velvetschoon@gmail.com">velvetschoon@gmail.com</a></p>
+    </div>
+  </section>
+
   <footer>
     <p>Velvet Schoon - Schoonmaakbedrijf</p>
     <p>KvK-nummer: 97385522</p>
-    <p>BTW-nummer: 555082507</p>
-    <p>E-mail: <a href="mailto:velvetschoon@gmail.com">velvetschoon@gmail.com</a></p>
+    <p>Rekeningnummer: NL43 RABO 0126438684</p>
   </footer>
 </body>
 </html>
