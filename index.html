@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velvet Schoon - Schoonmaakbedrijf</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      background-image: url('pozadi.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4c1d95, #7c3aed);
+      background-image: url('pozadi.png');
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: overlay;
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header img.logo {
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+    }
+
+    section {
+      padding: 3rem 0;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #4c1d95;
+    }
+
+    section p {
+      max-width: 800px;
+      margin: 0 auto 1rem;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      width: 100%;
+      max-width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .service-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #4c1d95;
+    }
+
+    .service-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .service-card img:not([src]), .service-card img[src=""] {
+      border: 2px dashed #f00;
+      min-height: 150px;
+      background: #f8f8f8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #f00;
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .service-card:hover img {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    footer {
+      background: #4c1d95;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+      margin-top: 2rem;
+    }
+
+    footer p {
+      margin: 0.5rem 0;
+    }
+
+    footer a {
+      color: #a78bfa;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section h2 {
+        font-size: 1.8rem;
+      }
+
+      .service-card {
+        max-width: 100%;
+      }
+
+      .container {
+        padding: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      section h2 {
+        font-size: 1.5rem;
+      }
+
+      .service-card {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo1.png" alt="Velvet Schoon Logo" class="logo">
+    <h1>Velvet Schoon</h1>
+    <p>Uw vertrouwde partner voor een schone leefomgeving</p>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>Over Ons</h2>
+      <p>Velvet Schoon is een professioneel schoonmaakbedrijf dat gespecialiseerd is in het schoonmaken van woningen, kantoren en seniorenfaciliteiten. Met oog voor detail en een passie voor netheid zorgen wij voor een frisse en gezonde omgeving voor al onze klanten.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2>Onze Diensten</h2>
+      <div class="services">
+        <div class="service-card">
+          <h3>Woning Schoonmaak</h3>
+          <img src="obrazek1.png" alt="Woning Schoonmaak">
+        </div>
+        <div class="service-card">
+          <h3>Kantoorschoonmaak</h3>
+          <img src="obrazek2.png" alt="Kantoorschoonmaak">
+        </div>
+        <div class="service-card">
+          <h3>Seniorenfaciliteiten</h3>
+          <img src="obrazek3.png" alt="Seniorenfaciliteiten">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Velvet Schoon Sch
